@@ -15,6 +15,7 @@ import { useSearchHistory } from '~/hooks/useSearchHistory';
 import { useWeather } from '~/hooks/useWeather';
 import type { CityItem, WeatherDetail } from '~/types/Forecast';
 import { getName, mathRound } from '~/utils';
+import { isDayTime } from '~/utils/date';
 import { formatWeatherCardItem } from '~/utils/weather';
 
 const WeatherItems = (props: { items?: string[] }) => {
@@ -100,7 +101,7 @@ export default function figma() {
   }, []);
 
   return (
-    <MainComponent defaultMode="light">
+    <MainComponent defaultMode={isDayTime() ? 'light' : 'dark'}>
       <InputSearchComponent
         value={search}
         onChange={setSearch}
