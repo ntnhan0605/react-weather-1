@@ -1,0 +1,55 @@
+@layer mui;
+@import 'tailwindcss';
+
+html,
+body {
+  font-family: 'Noto San', sans-serif;
+}
+
+.theme-light {
+  --bg-root: url('/images/bg-light.png');
+  --bg-color: rgba(255, 255, 255, 0.2);
+
+  --input-bg: rgba(255, 255, 255, 0.2);
+  --input-color: #000;
+  --input-label-color: rgba(0, 0, 0, 0.4);
+
+  --button-bg: #6c40b5;
+
+  --highlight-temperature-color: #6c40b5;
+  --today-item-color: #666666;
+
+  --history-color: #000;
+  --history-border-color: rgba(255, 255, 255, 0.5);
+  --history-item-bg: rgba(255, 255, 255, 0.4);
+  --history-item-time-color: #000;
+
+  --history-button-bg: #fff;
+  --history-button-shadow: 0px 4px 12px 0px #0000001a;
+  --history-button-border: transparent;
+  --history-button-color: rgba(0, 0, 0, 0.4);
+}
+
+.theme-dark {
+  --bg-root: url('/images/bg-dark.png');
+  --bg-color: rgba(0, 0, 0, 0.3);
+
+  --input-bg: rgba(0, 0, 0, 0.3);
+  --input-color: #fff;
+  --input-label-color: rgba(255, 255, 255, 0.4);
+
+  --button-bg: #28124d;
+
+  --highlight-temperature-color: #fff;
+  --today-item-color: #fff;
+
+  --history-color: #fff;
+  --history-border-color: transparent;
+  --history-item-bg: rgba(0, 0, 0, 0.5);
+  --history-item-time-color: rgba(255, 255, 255, 0.5);
+
+  --history-button-bg: transparent;
+  --history-button-shadow: none;
+  --history-button-border: rgba(255, 255, 255, 0.4);
+  --history-button-color: rgba(255, 255, 255, 0.5);
+}
